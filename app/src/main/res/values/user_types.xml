@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="user_types">
+        <item>طالب</item>
+        <item>استاذ</item>
+        <item>مشرف</item>
+        <item>مدير</item>
+        <item>مسؤول البيانات</item>
+    </string-array>
+</resources>

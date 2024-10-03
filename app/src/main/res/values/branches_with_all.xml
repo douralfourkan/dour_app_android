@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="branches_with_all">
+        <item>الباردة</item>
+        <item>البيرة</item>
+        <item>خربة شار</item>
+        <item>فريديس</item>
+        <item>المجدل</item>
+        <item>خربة داود</item>
+        <item>السنديانة</item>
+        <item>وادي خالد</item>
+        <item>المشاتي</item>
+        <item>عمار البيكات</item>
+        <item>الدوسة - بغدادي</item>
+        <item>الدوسة</item>
+        <item>الكواشرة</item>
+        <item>عيدمون</item>
+        <item>سهل حلبا</item>
+        <item>جميع الفروع</item>
+    </string-array>
+</resources>

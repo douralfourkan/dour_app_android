@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grades_level">
+        <item>--</item>
+        <item>جزء عم</item>
+        <item>جزئي  عم  و  تبارك</item>
+        <item>5 أجزاء</item>
+        <item>10 أجزاء</item>
+        <item>15 جزء</item>
+        <item>20 جزء</item>
+        <item>القرآن كاملا</item>
+    </string-array>
+</resources>

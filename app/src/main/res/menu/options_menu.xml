@@ -1,0 +1,16 @@
+<!-- res/menu/menu_main.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/change_pass"
+        android:title="تغيير كلمة السر"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/logout_menu"
+        android:title="تسجيل الخروج"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:textColor="#FF0000"
+        style="@style/RedTextMenuItem"/>
+</menu>

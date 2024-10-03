@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "933333621934",
+    "project_id": "douralfourkan-6358c",
+    "storage_bucket": "douralfourkan-6358c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933333621934:android:caf5009ec3a935fea4213f",
+        "android_client_info": {
+          "package_name": "com.douralfourkan.firstapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4WMaRrPddBmHx7wnCLIinajXySa9EiUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

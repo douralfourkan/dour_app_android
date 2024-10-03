@@ -1,0 +1,62 @@
+<!-- res/values/styles.xml -->
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+        <!-- Primary brand color -->
+        <item name="colorPrimary">#009688</item>
+        <item name="colorPrimaryVariant">@color/teal_700</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/your_secondary_color</item>
+        <item name="colorSecondaryVariant">@color/your_secondary_variant_color</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">#009688</item>
+
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/bottom_white</item>
+
+        <!-- Other customization options can go here -->
+
+        <!-- Customize the action bar -->
+        <item name="actionBarStyle">@style/Widget.AppCompat.ActionBar.Solid</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+
+        <!-- Customize the toolbar -->
+        <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
+
+    </style>
+
+
+    <!-- Night mode style -->
+    <style name="AppTheme.Night" parent="Theme.MaterialComponents.DayNight">
+
+        <!-- Customize night mode if needed -->
+
+    </style>
+
+    <!-- Customize your app's toolbar -->
+    <style name="Widget.AppCompat.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="titleTextColor">?android:textColorPrimary</item>
+    </style>
+
+    <color name="customButtonColor">#B9B9B9</color>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:popupBackground">?attr/colorPrimary</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+    <style name="RedTextMenuItem" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">#FF0000</item> </style>
+
+
+</resources>

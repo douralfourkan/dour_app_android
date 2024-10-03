@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/login"
+            android:scaleType="centerCrop"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="200dp"
+            app:cardCornerRadius="160dp"
+            android:background="@drawable/custom_card_background"/>
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="0dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_opaque"
+            android:scaleType="centerCrop"/>
+
+        <!-- text top -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="255dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="الفرع :"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="التسجيل كـ :"
+            android:layout_marginStart="140dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+
+
+
+        <!-- Spinners -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="280dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <Spinner
+                    android:id="@+id/mainstatuscheck"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/user_types"
+                    android:layoutDirection="rtl"
+                    android:padding="10dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+                <Spinner
+                    android:id="@+id/mainbranchcheck"
+                    style="@style/SpinnerStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/branches"
+                    android:layoutDirection="rtl"
+                    android:padding="10dp" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+
+
+        <!-- Username EditText -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:layout_gravity="center_horizontal"
+            android:layoutDirection="rtl"
+            android:background="#FFFFFF"
+            app:boxBackgroundColor="#FFFFFF">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl"
+                android:hint="اسم المستخدم"
+                android:inputType="text"
+                android:background="@android:color/transparent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="14dp"
+                android:gravity="right|center_vertical"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Password EditText -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordTextInputLayout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="410dp"
+            android:layout_gravity="center_horizontal"
+            android:layoutDirection="rtl"
+            android:background="#FFFFFF"
+            app:boxBackgroundColor="#FFFFFF"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl"
+                android:hint="كلمة المرور"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="35dp"
+                android:paddingBottom="14dp"
+                android:gravity="right"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+        <!-- Login Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/loginCardView"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="500dp"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="10dp">
+
+                <Button
+                    android:id="@+id/main_login_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="تسجيل الدخول"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:background="#009688"/>
+            </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/errortext"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="550dp"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textColor="#FF0000" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="580dp"
+            android:layout_marginRight="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/wearebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageViewInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:src="@drawable/info" />
+
+                        <TextView
+                            android:id="@+id/textViewInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="من نحن"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewExplain"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/explainbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageViewExplain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:src="@drawable/explain" />
+
+                        <TextView
+                            android:id="@+id/textViewExplain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:padding="14dp"
+                            android:singleLine="true"
+                            android:text="شرح التطبيق"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewContact"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/contactbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageViewContact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:src="@drawable/contact" />
+
+                        <TextView
+                            android:id="@+id/textViewContact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:text="تواصل معنا"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>
+

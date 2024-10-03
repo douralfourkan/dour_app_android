@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="age_level">
+        <item>--</item>
+        <item>6 سنوات وما دون</item>
+        <item>8 سنوات وما دون</item>
+        <item>10 سنوات وما دون</item>
+        <item>12 سنة وما دون</item>
+        <item>15 سنة وما دون</item>
+        <item>20 سنة وما دون</item>
+        <item>أكثر من 20 سنة</item>
+    </string-array>
+</resources>

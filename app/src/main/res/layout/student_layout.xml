@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/student_custom_card_background">
+        <ImageView
+            android:id="@+id/optionsMenuButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|left"
+            android:src="@drawable/iconmenu"
+            android:contentDescription="Options Menu"
+            android:onClick="showOptionsMenu" />
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ellipsize="end"
+            android:layout_gravity="top|center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="طالب"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Student card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/StudentcardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-100dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/linearInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewInfo"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/studentnametopview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="25dp"
+
+                android:layout_gravity="center"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:fontFamily="sans-serif-condensed"/>
+            <TextView
+                android:id="@+id/studentagetopview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/studentbranchtopview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_height="1dp"
+                android:background="@color/teal_700" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:id="@+id/studentteachertopview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:maxWidth="140dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/studentsectiontopview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15dp"
+
+                    android:maxWidth="140dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/icon_update" />
+    <TextView
+        android:id="@+id/last_update"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:ellipsize="end"
+        android:layout_gravity="top|center"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <!-- two btns All group-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <!-- First pair: monitor_attendance -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="160dp"
+            android:id="@+id/show_attendance">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/student_showattendance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/icon_calender" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center|bottom"
+                    android:text="متابعة الحضور"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <!-- Second pair: student_showgrade -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="160dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/student_showgrade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center|top"
+                    android:src="@drawable/icon_grade" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="10dp"
+                    android:text="متابعة الحفظ"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Agenda -->
+    <TextView
+        android:id="@+id/studenthowmeworkmsg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_back"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="-115dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/agenda_back"
+        android:textColor="#FFFFFF"
+        android:text="الواجبات"/>
+
+    <TextView
+        android:id="@+id/studentnotemsg"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="100dp"
+        android:padding="25dp"
+
+        android:background="@drawable/text_back"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16dp"
+
+        android:layout_marginTop="-120dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/agenda_back"
+        android:textColor="#FFFFFF"
+        android:text="الملاحظات"/>
+</LinearLayout>

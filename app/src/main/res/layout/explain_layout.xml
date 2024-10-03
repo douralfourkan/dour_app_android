@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/teal_700"
+        android:contentInsetStart="0dp"
+        android:contentInsetEnd="0dp"
+        android:layoutDirection="rtl"
+        android:theme="?attr/actionBarTheme">
+        <!-- Options Menu Button -->
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="شرح التطبيق"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/iconback"
+            android:contentDescription="Options Menu"
+            android:onClick="showOptionsMenu" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/e1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image1"
+                android:src="@drawable/e2"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image2"
+
+                android:src="@drawable/e3"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image3"
+                android:src="@drawable/e4"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image4"
+                android:src="@drawable/e5"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image5"
+                android:src="@drawable/e6"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:id="@+id/image7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image6"
+                android:src="@drawable/e7"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/image8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image7"
+                android:src="@drawable/e8"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:id="@+id/image9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image8"
+                android:src="@drawable/e9"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/image10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image9"
+                android:src="@drawable/e10"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:id="@+id/image11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image10"
+                android:src="@drawable/e11"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/image12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image11"
+                android:src="@drawable/e12"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:id="@+id/image13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image12"
+                android:src="@drawable/e13"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/image14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image13"
+                android:src="@drawable/e14"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:id="@+id/image15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image14"
+                android:src="@drawable/e15"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

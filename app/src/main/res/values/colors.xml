@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+        <color name="colorMale">#2196F3</color>
+        <color name="colorFemale">#F6839E</color>
+        <color name="colorGray">#B3B3B3</color>
+
+        <!-- Primary brand color -->
+        <color name="your_primary_color">#FF4081</color>
+        <color name="your_primary_variant_color">#D81B60</color>
+        <color name="teal_700">#009688</color>
+        <color name="purple_500">#9C27B0</color>
+
+        <!-- Secondary brand color -->
+        <color name="your_secondary_color">#3F51B5</color>
+        <color name="your_secondary_variant_color">#303F9F</color>
+
+        <!-- Other colors can be defined here -->
+        <color name="your_surface_color">#FFFFFF</color>
+        <color name="your_on_surface_color">#000000</color>
+
+        <color name="bottom_login">#DDE8E7</color>
+        <color name="bottom_white">#FFFFFF</color>
+
+        <color name="color1">#FFC107</color>
+        <color name="color2">#9C27B0</color>
+        <color name="color3">#03A9F4</color>
+        <color name="color4">#338b85</color>
+        <color name="black">#000000</color>
+
+
+        <!-- For dark mode -->
+        <color name="card_background">@android:color/white</color>
+
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingCircleOnImage">
+        <attr name="percentage" format="integer" />
+        <attr name="srcCompat" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PieChartView">
+        <attr name="maleCount" format="integer" />
+        <attr name="femaleCount" format="integer" />
+    </declare-styleable>
+</resources>
